@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lap" parallel="tests" thread-count="5">
+    <test name="BookingTest">
+        <parameter name="remoteUrl" value="http://192.168.1.6:5557/wd/hub"/>
+        <classes>
+            <class name="bookingTest"/>
+        </classes>
+    </test>
+    <test name="OsnTest">
+        <parameter name="remoteUrl" value="http://192.168.1.6:5558/wd/hub"/>
+        <classes>
+            <class name="osnTest"/>
+        </classes>
+    </test>
+</suite>
