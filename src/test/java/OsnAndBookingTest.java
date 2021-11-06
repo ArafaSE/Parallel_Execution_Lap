@@ -15,7 +15,7 @@ public class OsnAndBookingTest {
     @BeforeTest
     public void beforeTest() {
         ChromeOptions chromeOptions = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", ChromePath);
+        System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/workspace/scmPipeline/drivers/chromedriver.exe");
         chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
     }
