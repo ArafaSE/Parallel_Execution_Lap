@@ -32,6 +32,7 @@ pipeline {
         stage('Test') {
             steps {
               // run maven test to run all test suites added into maven build
+              chmod +x /var/jenkins_home/workspace/scmPipeline/drivers/chromedriver.exe
               mvn test
             }
 
