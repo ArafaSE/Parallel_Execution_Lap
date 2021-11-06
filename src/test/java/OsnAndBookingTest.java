@@ -16,6 +16,7 @@ public class OsnAndBookingTest {
     public void beforeTest() {
         ChromeOptions chromeOptions = new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", ChromePath);
+        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
     }
 
