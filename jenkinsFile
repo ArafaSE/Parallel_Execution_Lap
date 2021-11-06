@@ -20,7 +20,8 @@ pipeline {
         stage('Test') {
             steps {
               // add execute permission to driver
-              sudo chmod +x /var/jenkins_home/workspace/scmPipeline/drivers/chromedriver.exe
+              sh '''sudo chmod +x /var/jenkins_home/workspace/scmPipeline/drivers/chromedriver.exe '''
+
               // run maven test to run all test suites added into maven build
               mvn test
             }
