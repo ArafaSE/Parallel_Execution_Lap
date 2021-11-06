@@ -22,7 +22,11 @@ public class bookingTest {
     public void beforeTest(String remoteURL) throws MalformedURLException {
         ChromeOptions chromeOptions= new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", ChromePath);
-        driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
+        if (remoteURL.isEmpty()){
+            driver = new ChromeDriver(chromeOptions);
+        }else {
+            driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
+        }
     }
 
     @Test

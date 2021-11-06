@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
@@ -19,7 +20,12 @@ public class osnTest {
     public void beforeTest(String remoteURL) throws MalformedURLException {
         ChromeOptions chromeOptions= new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", ChromePath);
-        driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
+        if (remoteURL.isEmpty()){
+            driver = new ChromeDriver(chromeOptions);
+        }else {
+            driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
+        }
+
     }
     @Test
     public void osnTest1() throws InterruptedException {
