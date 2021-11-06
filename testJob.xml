@@ -2,15 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Lap">
     <test name="BookingTest">
-        <parameter name="remoteUrl" value=""/>
         <classes>
-            <class name="bookingTest"/>
-        </classes>
-    </test>
-    <test name="OsnTest">
-        <parameter name="remoteUrl" value=""/>
-        <classes>
-            <class name="osnTest"/>
+            <class name="OsnAndBookingTest"/>
         </classes>
     </test>
 </suite>
