@@ -19,7 +19,7 @@ public class OsnAndBookingTest {
         System.out.println("ChromePath:" + ChromePath);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
-        //chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--headless");
 
         System.setProperty("webdriver.chrome.driver", ChromePath);
 
