@@ -1,7 +1,7 @@
 1. make sure the Selenium Web-driver and Selenium Stand alone server versions attached in the resources folder is compatible wih your browser version
 2. open the driver path in your command line
 3. run selenium hub: java -jar selenium-server-standalone.<version>.jar -role hub
-4. run the first node: java -jar selenium-server0standalone.<version>. jar -role node -hub "Hub URL" -port <Node Port>
+4. run the first node: java -jar selenium-server0standalone.<version>.jar -role node -hub "Hub URL" -port <Node Port>
 Note:
 <Hub url> like: http://192.168.1.7:4444/grid/register/
 <Node Port> any valid port like: 5557, 5558 etc

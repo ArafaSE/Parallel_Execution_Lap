@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -14,9 +15,11 @@ public class OsnAndBookingTest {
 
     @BeforeTest
     public void beforeTest() {
+        System.out.println("ChromePath:" + ChromePath);
         ChromeOptions chromeOptions = new ChromeOptions();
         System.setProperty("webdriver.chrome.driver", ChromePath);
         chromeOptions.addArguments("--headless");
+
         driver = new ChromeDriver(chromeOptions);
     }
 
