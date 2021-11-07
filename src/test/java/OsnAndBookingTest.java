@@ -12,12 +12,15 @@ public class OsnAndBookingTest {
     String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver.exe";
 
     @BeforeSuite
-    public void beforeTest() {
+
+    public void beforeSuite() {
+
         System.out.println("ChromePath:" + ChromePath);
 
         ChromeOptions chromeOptions = new ChromeOptions();
+
         chromeOptions.addArguments("--no-sandbox"); //Bypass OS security model
-        //chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--headless");
 
         System.setProperty("webdriver.chrome.driver", ChromePath);
 
@@ -37,7 +40,8 @@ public class OsnAndBookingTest {
     public void signIn() throws InterruptedException {
 
         driver.navigate().to("https://account.booking.com/sign-in");
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
+
         System.out.println("Booking test Running with ID: " + Thread.currentThread().getId());
         Thread.sleep(5000);
     }
