@@ -1,18 +1,17 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class bookingTest {
-
+public class GitHubTest {
     WebDriver driver;
     String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver.exe";
 
@@ -25,24 +24,22 @@ public class bookingTest {
         driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
         driver.manage().window().maximize();
 
-        System.out.println("Booking test Running with ID: " + Thread.currentThread().getId());
+        System.out.println("GitHub test Running with ID: " + Thread.currentThread().getId());
     }
 
     @Test
-    public void navigateToBookingHome() throws InterruptedException {
+    public void navigateToGitHubHomePage() throws InterruptedException {
 
-        driver.navigate().to("https://www.booking.com/");
-
-        Thread.sleep(2000);
+        driver.navigate().to("https://github.com/");
+        Thread.sleep(3000);
+        Assert.assertTrue(driver.findElement(By.id("user_email")).isDisplayed());
     }
-
     @Test
-    public void openBookingSignInPage() throws InterruptedException {
-        driver.findElement(By.xpath( "//a[contains(@class, 'js-header-login-link') and contains(., 'Sign in')]")).click();
+    public void openSignInPage() throws InterruptedException {
+        driver.findElement(By.xpath( "//a[contains(@class, 'HeaderMenu-link') and contains(., 'Sign in')]")).click();
+        Thread.sleep(3000);
+        Assert.assertTrue(driver.findElement(By.id("login_field")).isDisplayed());
 
-        Assert.assertTrue(driver.findElement(By.name("username")).isDisplayed());
-
-        Thread.sleep(2000);
     }
 
     @AfterClass
