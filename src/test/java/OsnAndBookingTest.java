@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 
 public class OsnAndBookingTest {
     WebDriver driver;
-    String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver.exe";
+    String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver_Linux_95";
 
     @BeforeSuite
 
@@ -42,7 +42,7 @@ public class OsnAndBookingTest {
         driver.navigate().to("https://account.booking.com/sign-in");
         driver.manage().window().maximize();
 
-        System.out.println("Booking test Running with ID: " + Thread.currentThread().getId());
+        System.out.println("Booking signIn Test Running with ID: " + Thread.currentThread().getId());
         Thread.sleep(5000);
     }
 
