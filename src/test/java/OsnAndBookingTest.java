@@ -2,10 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 
@@ -15,14 +12,17 @@ public class OsnAndBookingTest {
     String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver.exe";
 
     @BeforeSuite
+
     public void beforeSuite() {
+
         System.out.println("ChromePath:" + ChromePath);
+
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--no-sandbox");
+
+        chromeOptions.addArguments("--no-sandbox"); //Bypass OS security model
         chromeOptions.addArguments("--headless");
 
         System.setProperty("webdriver.chrome.driver", ChromePath);
-
 
         driver = new ChromeDriver(chromeOptions);
     }
@@ -37,10 +37,11 @@ public class OsnAndBookingTest {
     }
 
     @Test
-    public void osnTest() throws InterruptedException {
+    public void signIn() throws InterruptedException {
 
-        driver.get("https://www.booking.com/sign-in");
+        driver.navigate().to("https://account.booking.com/sign-in");
         driver.manage().window().maximize();
+
         System.out.println("Booking test Running with ID: " + Thread.currentThread().getId());
         Thread.sleep(5000);
     }

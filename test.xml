@@ -2,15 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Lap" parallel="tests" thread-count="5">
     <test name="BookingTest">
-        <parameter name="remoteUrl" value="http://192.168.1.6:5557/wd/hub"/>
+<!--        <parameter name="remoteUrl" value="http://192.168.1.6:5557/wd/hub"/>-->
+        <parameter name="remoteUrl" value="http://10.240.22.23:5557/wd/hub"/>
         <classes>
             <class name="bookingTest"/>
         </classes>
     </test>
-    <test name="OsnTest">
-        <parameter name="remoteUrl" value="http://192.168.1.6:5558/wd/hub"/>
+    <test name="UdemyTest">
+<!--        <parameter name="remoteUrl" value="http://192.168.1.6:5558/wd/hub"/>-->
+        <parameter name="remoteUrl" value="http://10.240.22.23:5558/wd/hub"/>
         <classes>
-            <class name="osnTest"/>
+            <class name="UdemyTest"/>
+        </classes>
+    </test>
+    <test name="GitHubTest">
+        <!--        <parameter name="remoteUrl" value="http://192.168.1.6:5558/wd/hub"/>-->
+        <parameter name="remoteUrl" value="http://10.240.22.23:5559/wd/hub"/>
+        <classes>
+            <class name="GitHubTest"/>
         </classes>
     </test>
 </suite>
+
+<!--
+Methods: This will run the parallel tests on all @Test methods in TestNG.
+Tests: All the test cases present inside the <test> tag will run with this value.
+Classes: All the test cases present inside the classes that exist in the XML will run in parallel.
+Instances: This value will run all the test cases parallelly inside the same instance.
+-->
