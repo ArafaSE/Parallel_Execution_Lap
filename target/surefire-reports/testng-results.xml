@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-07T09:58:29 EET" name="Lap" finished-at="2021-11-07T09:58:44 EET" duration-ms="14668">
+  <suite started-at="2021-11-07T11:04:53 EET" name="Lap" finished-at="2021-11-07T11:05:10 EET" duration-ms="17220">
     <groups>
     </groups>
-    <test started-at="2021-11-07T09:58:29 EET" name="BookingTest" finished-at="2021-11-07T09:58:44 EET" duration-ms="14668">
+    <test started-at="2021-11-07T11:04:53 EET" name="BookingTest" finished-at="2021-11-07T11:05:10 EET" duration-ms="17220">
       <class name="OsnAndBookingTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:26 EET" name="beforeSuite" finished-at="2021-11-07T09:58:29 EET" duration-ms="2998" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T11:04:51 EET" name="beforeSuite" finished-at="2021-11-07T11:04:53 EET" duration-ms="1729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="bookingTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:29 EET" name="bookingTest" finished-at="2021-11-07T09:58:36 EET" duration-ms="7017" status="PASS">
+        <test-method signature="bookingTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T11:04:53 EET" name="bookingTest" finished-at="2021-11-07T11:04:59 EET" duration-ms="6627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingTest -->
-        <test-method signature="osnTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:36 EET" name="osnTest" finished-at="2021-11-07T09:58:44 EET" duration-ms="7388" status="PASS">
+        <test-method signature="osnTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T11:04:59 EET" name="osnTest" finished-at="2021-11-07T11:05:06 EET" duration-ms="6381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- osnTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:44 EET" name="tearDown" finished-at="2021-11-07T09:58:44 EET" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T11:05:06 EET" name="tearDown" finished-at="2021-11-07T11:05:10 EET" duration-ms="4187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="18.974" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.518" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="sun.java.command" value="C:\Users\moham\AppData\Local\Temp\surefire5269251344592647646\surefirebooter8691746265646650876.jar C:\Users\moham\AppData\Local\Temp\surefire5269251344592647646 2021-11-07T09-58-23_554-jvmRun1 surefire870847867657790864tmp surefire_017487483841337727183tmp"/>
+    <property name="sun.java.command" value="C:\Users\moham\AppData\Local\Temp\surefire8807316421390560468\surefirebooter15957125450851156378.jar C:\Users\moham\AppData\Local\Temp\surefire8807316421390560468 2021-11-07T11-04-50_089-jvmRun1 surefire3773361847047776146tmp surefire_03132254766393939833tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\moham\Documents\IdeaProjects\MyLap\target\test-classes;C:\Users\moham\Documents\IdeaProjects\MyLap\target\classes;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\moham\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\moham\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\moham\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\moham\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\moham\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\moham\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\moham\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\moham\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\moham\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\moham\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\moham\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\moham\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\moham\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\moham\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\moham\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\moham\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\moham\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\moham\AppData\Local\Temp\surefire5269251344592647646\surefirebooter8691746265646650876.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\moham\AppData\Local\Temp\surefire8807316421390560468\surefirebooter15957125450851156378.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
@@ -61,19 +61,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="bookingTest" classname="OsnAndBookingTest" time="6.942">
+  <testcase name="bookingTest" classname="OsnAndBookingTest" time="6.603">
     <system-out><![CDATA[ChromePath:C:\Users\moham\Documents\IdeaProjects\MyLap/drivers/chromedriver.exe
 Booking test Running with ID: 1
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 38185
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 27963
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 07, 2021 9:58:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 07, 2021 11:04:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="osnTest" classname="OsnAndBookingTest" time="7.376">
+  <testcase name="osnTest" classname="OsnAndBookingTest" time="6.379">
     <system-out><![CDATA[Booking test Running with ID: 1
 ]]></system-out>
   </testcase>
