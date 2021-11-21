@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Lap" class="navigator-link">
-              <span class="suite-name border-passed">Lap</span>
+            <a href="#" class="navigator-link" panel-name="suite-Lap">
+              <span class="suite-name border-failed">Lap</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Lap" class="navigator-link ">
-                    <span>C:\Users\moham\Documents\IdeaProjects\MyLap\bddParallel.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Lap">
+                    <span>D:\IntelliJ\Parallel_Execution_Lap\bddParallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Lap">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Lap">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Lap">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Lap">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Lap">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Lap" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Lap">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Lap" class="hide-methods failed suite-Lap"> (hide)</a> <!-- hide-methods failed suite-Lap -->
+                      <a href="#" panel-name="suite-Lap" class="show-methods failed suite-Lap"> (show)</a> <!-- show-methods failed suite-Lap -->
+                    </span>
+                    <div class="method-list-content failed suite-Lap">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;signIn-2&quot;, &quot;Optional[booking.com]&quot;)">runScenario("signIn-2", "Optional[booking.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;signIn&quot;, &quot;Optional[booking.com]&quot;)">runScenario("signIn", "Optional[booking.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Lap -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,13 +122,38 @@
                     </span>
                     <div class="method-list-content passed suite-Lap">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Lap" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;Home page content&quot;, &quot;Optional[osn.com]&quot;)">runScenario("Home page content", "Optional[osn.com]")</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;user can navigate from home to about page-3&quot;, &quot;Optional[udemy.com]&quot;)">runScenario("user can navigate from home to about page-3", "Optional[udemy.com]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Lap" title="RunCucumberTest" class="method navigator-link" hash-for-method="runScenario(&quot;signIn&quot;, &quot;Optional[booking.com]&quot;)">runScenario("signIn", "Optional[booking.com]")</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;Home page content-2&quot;, &quot;Optional[osn.com]&quot;)">runScenario("Home page content-2", "Optional[osn.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;user can navigate from home to about page-2&quot;, &quot;Optional[udemy.com]&quot;)">runScenario("user can navigate from home to about page-2", "Optional[udemy.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;Home page content-3&quot;, &quot;Optional[osn.com]&quot;)">runScenario("Home page content-3", "Optional[osn.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;Home page content&quot;, &quot;Optional[osn.com]&quot;)">runScenario("Home page content", "Optional[osn.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;user can navigate from home to about page&quot;, &quot;Optional[udemy.com]&quot;)">runScenario("user can navigate from home to about page", "Optional[udemy.com]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Lap" title="RunCucumberTest" hash-for-method="runScenario(&quot;signIn-3&quot;, &quot;Optional[booking.com]&quot;)">runScenario("signIn-3", "Optional[booking.com]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Lap -->
@@ -124,12 +168,106 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Lap" class="panel Lap">
+          <div class="suite-Lap-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">RunCucumberTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;signIn-2&quot;, &quot;Optional[booking.com]&quot;)">
+                  </a> <!-- runScenario("signIn-2", "Optional[booking.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("signIn-2", "Optional[booking.com]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ITY1FDR&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at booking.BookingStepdefs.iNavigateToSignInPage(BookingStepdefs.java:79)
+	at ✽.I navigate to signIn page(file:///D:/IntelliJ/Parallel_Execution_Lap/src/test/java/booking/booking.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;signIn&quot;, &quot;Optional[booking.com]&quot;)">
+                  </a> <!-- runScenario("signIn", "Optional[booking.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("signIn", "Optional[booking.com]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ITY1FDR&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at booking.BookingStepdefs.theSignInFormDisplayed(BookingStepdefs.java:86)
+	at ✽.The signIn form displayed(file:///D:/IntelliJ/Parallel_Execution_Lap/src/test/java/booking/booking.feature:7)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Lap-class-failed -->
           <div class="suite-Lap-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">RunCucumberTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can navigate from home to about page-3&quot;, &quot;Optional[udemy.com]&quot;)">
+                  </a> <!-- runScenario("user can navigate from home to about page-3", "Optional[udemy.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can navigate from home to about page-3", "Optional[udemy.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Home page content-2&quot;, &quot;Optional[osn.com]&quot;)">
+                  </a> <!-- runScenario("Home page content-2", "Optional[osn.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Home page content-2", "Optional[osn.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can navigate from home to about page-2&quot;, &quot;Optional[udemy.com]&quot;)">
+                  </a> <!-- runScenario("user can navigate from home to about page-2", "Optional[udemy.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can navigate from home to about page-2", "Optional[udemy.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Home page content-3&quot;, &quot;Optional[osn.com]&quot;)">
+                  </a> <!-- runScenario("Home page content-3", "Optional[osn.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Home page content-3", "Optional[osn.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Home page content&quot;, &quot;Optional[osn.com]&quot;)">
@@ -142,10 +280,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;signIn&quot;, &quot;Optional[booking.com]&quot;)">
-                  </a> <!-- runScenario("signIn", "Optional[booking.com]") -->
+                  <a name="runScenario(&quot;user can navigate from home to about page&quot;, &quot;Optional[udemy.com]&quot;)">
+                  </a> <!-- runScenario("user can navigate from home to about page", "Optional[udemy.com]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("signIn", "Optional[booking.com]")</span>
+                  <span class="parameters">("user can navigate from home to about page", "Optional[udemy.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;signIn-3&quot;, &quot;Optional[booking.com]&quot;)">
+                  </a> <!-- runScenario("signIn-3", "Optional[booking.com]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("signIn-3", "Optional[booking.com]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,14 +303,14 @@
         </div> <!-- panel Lap -->
         <div panel-name="test-xml-Lap" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\moham\Documents\IdeaProjects\MyLap\bddParallel.xml</span>
+            <span class="header-content">D:\IntelliJ\Parallel_Execution_Lap\bddParallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;Lap&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;BookingTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Lap&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;BookingTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;RunCucumberTest&quot;/&gt;
     &lt;/classes&gt;
@@ -212,20 +360,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'RunCucumberTest')
-data.setCell(0, 3, 17134);
+data.setCell(0, 3, 30963);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'RunCucumberTest')
-data.setCell(1, 3, 13252);
+data.setCell(1, 3, 28936);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'RunCucumberTest')
+data.setCell(2, 3, 27963);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'RunCucumberTest')
+data.setCell(3, 3, 24513);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'RunCucumberTest')
+data.setCell(4, 3, 22797);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'RunCucumberTest')
+data.setCell(5, 3, 21799);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'RunCucumberTest')
+data.setCell(6, 3, 21401);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'RunCucumberTest')
+data.setCell(7, 3, 19243);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'RunCucumberTest')
+data.setCell(8, 3, 19022);
 window.suiteTableData['Lap']= { tableData: data, tableDiv: 'times-div-Lap'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Lap">
               </div> <!-- times-div-Lap -->
             </div> <!-- times-div -->
@@ -253,20 +429,52 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">RunCucumberTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4d154ccd)</span>
+                <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Home page content", "Optional[osn.com]")</span>
-                <span class="method-start">240 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("signIn-2", "Optional[booking.com]")</span>
+                <span class="method-start">241 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">runScenario("user can navigate from home to about page-3", "Optional[udemy.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Home page content-2", "Optional[osn.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("signIn", "Optional[booking.com]")</span>
-                <span class="method-start">240 ms</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can navigate from home to about page-2", "Optional[udemy.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Home page content-3", "Optional[osn.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Home page content", "Optional[osn.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can navigate from home to about page", "Optional[udemy.com]")</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("signIn-3", "Optional[booking.com]")</span>
+                <span class="method-start">241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">17375 ms</span>
+                <span class="method-start">31208 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

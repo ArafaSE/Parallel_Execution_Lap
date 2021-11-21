@@ -6,3 +6,13 @@ Note:
 <Hub url> like: http://192.168.1.7:4444/grid/register/
 <Node Port> any valid port like: 5557, 5558 etc
 5. Run the XML file that supposed to support parallel execution as attached test.xml file
+
+Point 4 optional step if you want to run node with specific browser and specific number of instances:
+java -jar -jar selenium-server0standalone.<version>.jar -role node -hub "Hub URL" -port <Node Port> -browser browserName=<browser>,maxInstances=10
+- browserOptions[chrome,iexplore]
+
+
+
+--- for IE only --
+java -jar selenium-server-standalone-3.5.0.jar -role node -hub http://192.168.56.1:4444/grid/register -port 5559 -browser "browserName=internet explorer, version=11, platform=WINDOWS, maxIn
+stances=5, seleniumProtocol=WebDriver"

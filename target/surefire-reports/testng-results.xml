@@ -1,27 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="2" ignored="0" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-21T10:12:48 EET" name="Lap" finished-at="2021-11-21T10:13:05 EET" duration-ms="17405">
+  <suite name="Lap" duration-ms="31242" started-at="2021-11-21T17:26:10 EET" finished-at="2021-11-21T17:26:42 EET">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-21T10:12:48 EET" name="BookingTest" finished-at="2021-11-21T10:13:05 EET" duration-ms="17405">
+    <test name="BookingTest" duration-ms="31242" started-at="2021-11-21T17:26:10 EET" finished-at="2021-11-21T17:26:42 EET">
       <class name="RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T10:12:48 EET" name="setUpClass" finished-at="2021-11-21T10:12:48 EET" duration-ms="226" status="PASS">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunCucumberTest@394e1a0f]" name="setUpClass" is-config="true" duration-ms="227" started-at="2021-11-21T17:26:10 EET" finished-at="2021-11-21T17:26:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="30963" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:42 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4d154ccd]]>
+                <![CDATA["signIn-2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[booking.com]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITY1FDR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITY1FDR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+at booking.BookingStepdefs.iNavigateToSignInPage(BookingStepdefs.java:79)
+at ✽.I navigate to signIn page(file:///D:/IntelliJ/Parallel_Execution_Lap/src/test/java/booking/booking.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="19022" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:30 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can navigate from home to about page-3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[udemy.com]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T10:12:48 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T10:13:01 EET" duration-ms="13252" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="22797" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:33 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home page content-2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[osn.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="28936" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:40 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["signIn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[booking.com]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITY1FDR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITY1FDR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at booking.BookingStepdefs.theSignInFormDisplayed(BookingStepdefs.java:86)
+at ✽.The signIn form displayed(file:///D:/IntelliJ/Parallel_Execution_Lap/src/test/java/booking/booking.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="21401" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can navigate from home to about page-2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[udemy.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="24513" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home page content-3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[osn.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="21799" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:32 EET">
           <params>
             <param index="0">
               <value>
@@ -37,11 +170,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T10:12:48 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T10:13:05 EET" duration-ms="17134" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="19243" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:30 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA["signIn"]]>
+                <![CDATA["user can navigate from home to about page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[udemy.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@394e1a0f]" name="runScenario" duration-ms="27963" started-at="2021-11-21T17:26:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T17:26:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["signIn-3"]]>
               </value>
             </param>
             <param index="1">
@@ -53,7 +202,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T10:13:05 EET" name="tearDownClass" finished-at="2021-11-21T10:13:05 EET" duration-ms="11" status="PASS">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunCucumberTest@394e1a0f]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2021-11-21T17:26:42 EET" finished-at="2021-11-21T17:26:42 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
