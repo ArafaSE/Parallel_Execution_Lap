@@ -2,28 +2,62 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-07T09:58:29 EET" name="Lap" finished-at="2021-11-07T09:58:44 EET" duration-ms="14668">
+  <suite started-at="2021-11-21T09:59:48 EET" name="Lap" finished-at="2021-11-21T10:00:06 EET" duration-ms="17722">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-07T09:58:29 EET" name="BookingTest" finished-at="2021-11-07T09:58:44 EET" duration-ms="14668">
-      <class name="OsnAndBookingTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:26 EET" name="beforeSuite" finished-at="2021-11-07T09:58:29 EET" duration-ms="2998" status="PASS">
+    <test started-at="2021-11-21T09:59:48 EET" name="BookingTest" finished-at="2021-11-21T10:00:06 EET" duration-ms="17722">
+      <class name="RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T09:59:48 EET" name="setUpClass" finished-at="2021-11-21T09:59:49 EET" duration-ms="211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5a18cd76]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method signature="bookingTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:29 EET" name="bookingTest" finished-at="2021-11-07T09:58:36 EET" duration-ms="7017" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T09:59:49 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T10:00:06 EET" duration-ms="17472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home page content"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[osn.com]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingTest -->
-        <test-method signature="osnTest()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:36 EET" name="osnTest" finished-at="2021-11-07T09:58:44 EET" duration-ms="7388" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T09:59:49 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-21T10:00:05 EET" duration-ms="16796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["signIn"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[booking.com]"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- osnTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:OsnAndBookingTest@192c3f1e]" started-at="2021-11-07T09:58:44 EET" name="tearDown" finished-at="2021-11-07T09:58:44 EET" duration-ms="205" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunCucumberTest@a3d8174]" started-at="2021-11-21T10:00:06 EET" name="tearDownClass" finished-at="2021-11-21T10:00:06 EET" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- OsnAndBookingTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunCucumberTest -->
     </test> <!-- BookingTest -->
   </suite> <!-- Lap -->
 </testng-results>

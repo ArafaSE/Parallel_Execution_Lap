@@ -1,3 +1,2 @@
-bookingTest.class
-OsnAndBookingTest.class
-osnTest.class
+booking\BookingStepdefs.class
+osn\OsnStepdefs.class
