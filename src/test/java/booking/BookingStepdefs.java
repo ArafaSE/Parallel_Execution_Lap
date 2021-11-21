@@ -19,6 +19,7 @@ public class BookingStepdefs {
 
     WebDriver driver;
     String ChromePath = System.getProperty("user.dir") + "/drivers/chromedriver.exe";
+    String remoteURL = "http://192.168.1.6:5557/wd/hub/";
 
 
     public void startBrowser(){
@@ -32,9 +33,21 @@ public class BookingStepdefs {
         System.out.println("Active Thread Count: "+ Thread.activeCount());
     }
 
+    public void startChromeNode() throws MalformedURLException {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        System.setProperty("webdriver.chrome.driver", ChromePath);
+
+        driver = new RemoteWebDriver(new URL(remoteURL), chromeOptions);
+        driver.manage().window().maximize();
+
+        System.out.println("Booking test Running with Thread ID: " + Thread.currentThread().getId());
+        System.out.println("Active Thread Count: "+ Thread.activeCount());
+    }
+
     @Given("I am in the homepage")
-    public void iAmInTheHomepage() throws InterruptedException {
-        startBrowser();
+    public void iAmInTheHomepage() throws InterruptedException, MalformedURLException {
+        //startBrowser();
+        startChromeNode();
 
         driver.navigate().to("https://www.booking.com/");
 
